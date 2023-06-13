@@ -5,7 +5,11 @@ let dhonioldinfo = {
 } 
 
 
-let displayobject;
+let displayobject = {
+    name:"",
+    imageurl:"",
+    description:""
+};
 let getRandomUser = function(){
     fetch("https://randomuser.me/api")
     .then(response => response.json())
