@@ -3,22 +3,13 @@ let dhonioldinfo = {
     name: "Dhoni",
     discription:"Cricketer"
 } 
-let dhoniyounginfo = {
-    imgurl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToMSfih9B9-gDbMvyM-ROobva_kCqp3qFWMQ&usqp=CAU",
-    name: "MS Dhoni",
-    discription:"Indian cricket player"
-}
-let isdhoniold = true;
+
+
 let displayobject;
-let flipdata = function(){
-    if(isdhoniold == true){
-        displayobject=dhoniyounginfo;
-        isdhoniold = false;
-    }
-    else{
-        displayobject=dhonioldinfo;
-        isdhoniold=true;
-    }
+let getRandomUser = function(){
+    fetch("https://randomuser.me/api")
+    .then(response => response.json())
+    .then(data=>console.log(data))
     document.getElementById("dhoni-img").src=displayobject.imgurl;
     document.getElementById("dhoni-name").innerHTML=displayobject.name;
     document.getElementById("dhoni-discription").innerHTML=displayobject.discription;
