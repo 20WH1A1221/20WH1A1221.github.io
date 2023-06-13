@@ -1,0 +1,21 @@
+.container{
+    margin-left: 100px;
+    
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 30%;
+    transition:0.3%;
+}
+.cardimg{
+    width: 100%;
+}
+.cardbody{
+    padding: 2px 16px;
+}
+.cardbody-designation{
+    font-style:italic;
+}
+.card:hover{
+    box-shadow: 0 20px 32px 0 rgba(0,0,0,0.2);
+}
